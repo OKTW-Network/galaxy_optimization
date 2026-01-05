@@ -5,9 +5,6 @@
   "refmap": "${mod_id}.refmap.json",
   "compatibilityLevel": "JAVA_21",
   "mixins": [],
-  "client": [
-    "MixinTitleScreen"
-  ],
   "server": [],
   "injectors": {
     "defaultRequire": 1

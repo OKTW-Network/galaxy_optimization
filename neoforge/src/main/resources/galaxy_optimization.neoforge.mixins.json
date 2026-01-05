@@ -4,9 +4,6 @@
   "package": "one.oktw.galaxy_optimization.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [],
-  "client": [
-    "MixinTitleScreen"
-  ],
   "server": [],
   "injectors": {
     "defaultRequire": 1
