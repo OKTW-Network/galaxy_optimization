@@ -4,7 +4,17 @@
   "package": "one.oktw.galaxy_optimization.mixin",
   "refmap": "${mod_id}.refmap.json",
   "compatibilityLevel": "JAVA_18",
-  "mixins": [],
+  "mixins": [
+    "accessor.ChunkMapAccessor",
+    "accessor.SectionStorageAccessor",
+    "tweaks.MixinAsyncChunk_ChunkMap",
+    "tweaks.MixinAsyncChunk_ChunkTracker",
+    "tweaks.MixinAsyncChunk_IOWorker",
+    "tweaks.MixinAsyncChunk_RegionFile",
+    "tweaks.MixinAsyncChunk_RegionFileStorage",
+    "tweaks.MixinAsyncChunk_ServerChunkCache",
+    "tweaks.MixinAsyncChunk_ServerGamePacketListenerImpl"
+  ],
   "server": [],
   "injectors": {
     "defaultRequire": 1
