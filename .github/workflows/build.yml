@@ -43,14 +43,15 @@ jobs:
           {
             echo "### Artifact SHA256"
             echo '```terraform'
-            echo '# Fabric`
+            echo '# Fabric'
             cat sha256-fabric.txt
             echo '# Neoforge'
             cat sha256-neoforge.txt
             echo '```'
           } >> $GITHUB_STEP_SUMMARY
       - name: Add Gradle Summary Title
-        run: echo "### Gradle Summary" >> $GITHUB_STEP_SUMMARY
+        run: |
+          echo "### Gradle Summary" >> $GITHUB_STEP_SUMMARY
       - name: Capture fabric build artifacts
         if: ${{ runner.os == 'Linux' && matrix.java == '21' }} # Only upload artifacts built from LTS java on one OS
         uses: actions/upload-artifact@v4
